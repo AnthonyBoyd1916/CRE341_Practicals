@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 10
-  m_Fog: 1
+  m_Fog: 0
   m_FogColor: {r: 0.4862745, g: 0.69411767, b: 0.8117647, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.025
@@ -147,7 +147,7 @@ Transform:
   m_GameObject: {fileID: 320919900}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.6487945, y: 1.1, z: 27.39}
+  m_LocalPosition: {x: -1.6487945, y: 0.8, z: 27.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -174,8 +174,8 @@ MonoBehaviour:
   playerVisible: 1
   chaseDistance: 20
   attackDistance: 5
-  chaseHysterisis: 2
-  attackHysterisis: 0.5
+  chaseHysterisis: 3
+  attackHysterisis: 1
   AIState_Patrol: {fileID: 982176905}
   AIState_Chase: {fileID: 1930435376}
   AIState_Attack: {fileID: 1737630652}

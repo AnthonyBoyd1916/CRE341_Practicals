@@ -7,6 +7,7 @@ using System.Collections.Generic;
 public class FSM_WaypointPatrol : StateMachineBehaviour
 {
     GameObject NPC_00;
+    public GameObject NPC_01;
 
     // list of gameObject waypoints
     List<GameObject> waypoints;
@@ -34,7 +35,8 @@ public class FSM_WaypointPatrol : StateMachineBehaviour
 
         // get parent object of the object containing the animator
         if (Vector3.Distance(NPC_00.transform.position, WaypointTarget.position) < 0.1f)
-        {
+        {            
+            
             WaypointTarget = waypoints[Random.Range(0, waypoints.Count)].transform;
             NPC_00.GetComponent<NavMeshAgent>().SetDestination(WaypointTarget.position);
         }

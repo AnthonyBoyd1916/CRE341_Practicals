@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9af162dd100cca459c103930c534b72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NPC_01: {fileID: 0}
   WaypointTarget: {fileID: 0}
 --- !u!1102 &-3106210677237274321
 AnimatorState:
